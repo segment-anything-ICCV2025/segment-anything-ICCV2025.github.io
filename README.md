@@ -1,1 +1,1 @@
-Segment Anything ICCV Tutorial (ICCV 2025)
+Segment Anything ICCV Tutorial (ICCV-2025)
