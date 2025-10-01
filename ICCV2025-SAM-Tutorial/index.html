@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Segment Anything to Generalized Visual Grounding — ICCV 2025</title>
+  <meta name="description" content="ICCV 2025 Tutorial: From Segment Anything to Generalized Visual Grounding. Monday, Oct 20, 2025 — 9:00–12:30pm — Room 328 — Honolulu, Hawaii.">
+  <meta property="og:title" content="From Segment Anything to Generalized Visual Grounding — ICCV 2025">
+  <meta property="og:description" content="ICCV 2025 tutorial on the frontier of visual grounding: perception encoders, P(L)Ms, SAM, 3D segmentation and practical guidance.">
+  <meta property="og:image" content="assets/images/banner.svg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/banner.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav container" aria-label="Primary">
+    <div class="brand"><span>ICCV 2025</span> <div class="sep" aria-hidden="true">•</div> <strong>SAM Tutorial</strong></div>
+    <div class="links">
+      <a href="#overview">Overview</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#venue">Venue</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero container" id="top">
+  <div class="hero-inner">
+<!--    <div>-->
+<!--      <p class="notice">New in 2025</p>-->
+      <h1>From Segment Anything to Generalized Visual Grounding</h1>
+      <p class="lede">
+        Meta AI and academic partners present a fast‑paced tour of visual grounding: universal image/video encoders, multimodal large language models, segmentation & tracking, 3D, and hands‑on SAM tooling.
+      </p>
+      <div class="bullets underline">
+        <div class="tag">Monday, October 20, 2025</div>
+        <div class="tag">9:00–12:30pm</div>
+        <div class="tag">Room 328</div>
+        <div class="tag">Honolulu, Hawaii</div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="event.ics" download>📅 Add to Calendar (.ics)</a>
+        <a class="btn" href="#schedule">See agenda ↓</a>
+      </div>
+<!--    </div>-->
+<!--    <div>-->
+<!--      <img src="assets/images/banner.svg" alt="From Segment Anything to Generalized Visual Grounding — banner graphic">-->
+<!--    </div>-->
+  </div>
+</section>
+
+<section class="section container" id="overview">
+  <h2>Overview</h2>
+  <p>
+    This tutorial bridges <em>Segment Anything</em> to generalized visual grounding across images, video and 3D. Sessions span
+    perception encoders and perception language models (PEs/PLMs), modern segmentation at scale, grounding in 3D, and practical
+    workflows with SAM for research and production.
+  </p>
+  <div class="kv" role="list">
+    <span class="tag" role="listitem">Segment Anything</span>
+    <span class="tag" role="listitem">Perception Encoders</span>
+    <span class="tag" role="listitem">Perception Language Models</span>
+    <span class="tag" role="listitem">Segmentation in 3D </span>
+    <span class="tag" role="listitem">Open-source tooling</span>
+  </div>
+</section>
+
+<section class="section container" id="schedule">
+  <h2>Schedule</h2>
+  <p><strong>Monday, October 20, 2025</strong> — <em>9:00–12:30pm</em> — <strong>Room 328</strong></p>
+  <div class="schedule">
+    <div class="slot">
+      <div class="time">09:00</div>
+      <div>
+        <div class="talk-title">Welcome &amp; introduction</div>
+        <div class="talk-speakers"><a href="#christoph-feichtenhofer">Christoph Feichtenhofer</a></div>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time">09:10</div>
+      <div>
+        <div class="talk-title">Perception Encoder &amp; Perception Language Model</div>
+        <div class="talk-speakers"><a href="#daniel-bolya">Daniel Bolya</a> &amp; <a href="#christoph-feichtenhofer">Christoph Feichtenhofer</a></div>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time">10:00</div>
+      <div>
+        <div class="talk-title">Segment Anything</div>
+        <div class="talk-speakers"><a href="#laura-gustafson">Laura Gustafson</a>, <a href="#haitham-khedr">Haitham Khedr</a>, and <a href="#shoubhik-debnath">Shoubhik Debnath</a></div>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time">11:10</div>
+      <div>
+        <div class="talk-title">Segmentation in 3D</div>
+        <div class="talk-speakers"><a href="#xitong-yang">Xitong Yang</a> and <a href="#weiyao-wang">Weiyao Wang</a></div>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="time">12:00</div>
+      <div>
+        <div class="talk-title">Using Segment Anything, Perspectives and Issues</div>
+        <div class="talk-speakers"><a href="#sasha-mitts">Sasha Mitts</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="speakers">
+  <h2>Speakers</h2>
+  <div class="grid">
+    <article class="card person" id="christoph-feichtenhofer">
+      <img src="assets/headshots/christoph-feichtenhofer.jpg" alt="Headshot placeholder for Christoph Feichtenhofer">
+      <div class="meta">
+        <div class="name"><a href="https://feichtenhofer.github.io/" target="_blank" rel="noopener">Christoph Feichtenhofer</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://feichtenhofer.github.io/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="daniel-bolya">
+      <img src="assets/headshots/daniel-bolya.jpg" alt="Headshot placeholder for Daniel Bolya">
+      <div class="meta">
+        <div class="name"><a href="https://dbolya.com/" target="_blank" rel="noopener">Daniel Bolya</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://dbolya.com/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="laura-gustafson">
+      <img src="assets/headshots/laura-gustafson.jpeg" alt="Headshot placeholder for Laura Gustafson">
+      <div class="meta">
+        <div class="name"><a href="https://scholar.google.com/citations?user=c8IpF9gAAAAJ&hl=en" target="_blank" rel="noopener">Laura Gustafson</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://scholar.google.com/citations?user=c8IpF9gAAAAJ&hl=en" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="shoubhik-debnath">
+      <img src="assets/headshots/shoubhik-debnath.jpeg" alt="Headshot placeholder for Shoubhik Debnath">
+      <div class="meta">
+        <div class="name"><a href="https://www.linkedin.com/in/shoubhik-debnath-41268570/" target="_blank" rel="noopener">Shoubhik Debnath</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://www.linkedin.com/in/shoubhik-debnath-41268570/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="haitham-khedr">
+      <img src="assets/headshots/haitham-khedr.jpg" alt="Headshot placeholder for Haitham Khedr">
+      <div class="meta">
+        <div class="name"><a href="https://hkhedr.com/" target="_blank" rel="noopener">Haitham Khedr</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://hkhedr.com/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="xitong-yang">
+      <img src="assets/headshots/xitong-yang.jpeg" alt="Headshot placeholder for Xitong Yang">
+      <div class="meta">
+        <div class="name"><a href="https://scholar.google.com/citations?user=k0qC-7AAAAAJ&hl=en" target="_blank" rel="noopener">Xitong Yang</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://scholar.google.com/citations?user=k0qC-7AAAAAJ&hl=en" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="weiyao-wang">
+      <img src="assets/headshots/weiyao-wang.jpg" alt="Headshot placeholder for Weiyao Wang">
+      <div class="meta">
+        <div class="name"><a href="https://scholar.google.com/citations?user=d1-hNQoAAAAJ&hl=en" target="_blank" rel="noopener">Weiyao Wang</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://scholar.google.com/citations?user=d1-hNQoAAAAJ&hl=en" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="sasha-mitts">
+      <img src="assets/headshots/sasha-mitts.jpeg" alt="Headshot placeholder for Sasha Mitts">
+      <div class="meta">
+        <div class="name"><a href="https://www.linkedin.com/in/sashamitts/" target="_blank" rel="noopener">Sasha Mitts</a></div>
+        <div class="aff">Speaker</div>
+        <div class="ext"><a href="https://www.linkedin.com/in/sashamitts/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section container" id="organizers">
+  <h2>Organizers</h2>
+  <div class="grid">
+    <article class="card person" id="kate-saenko">
+      <img src="assets/headshots/kate-saenko.jpg" alt="Headshot placeholder for Kate Saenko">
+      <div class="meta">
+        <div class="name"><a href="https://www.bu.edu/cs/profiles/saenko/" target="_blank" rel="noopener">Kate Saenko</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://www.bu.edu/cs/profiles/saenko/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="nikhila-ravi">
+      <img src="assets/headshots/nikhila-ravi.webp" alt="Headshot placeholder for Nikhila Ravi">
+      <div class="meta">
+        <div class="name"><a href="https://www.nikhilaravi.com/" target="_blank" rel="noopener">Nikhila Ravi</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://www.nikhilaravi.com/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="kris-kitani">
+      <img src="assets/headshots/kris-kitani.jpg" alt="Headshot placeholder for Kris Kitani">
+      <div class="meta">
+        <div class="name"><a href="https://kriskitani.github.io/" target="_blank" rel="noopener">Kris Kitani</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://kriskitani.github.io/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="matt-feiszli">
+      <img src="assets/headshots/matt-feiszli.jpeg" alt="Headshot placeholder for Matt Feiszli">
+      <div class="meta">
+        <div class="name"><a href="https://www.linkedin.com/in/matt-feiszli-76b34b/" target="_blank" rel="noopener">Matt Feiszli</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://www.linkedin.com/in/matt-feiszli-76b34b/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="piotr-dollar">
+      <img src="assets/headshots/piotr-dollar.jpeg" alt="Headshot placeholder for Piotr Dollar">
+      <div class="meta">
+        <div class="name"><a href="https://www.linkedin.com/in/pdollar/" target="_blank" rel="noopener">Piotr Dollar</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://www.linkedin.com/in/pdollar/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="hanoona-abdul-Rasheed">
+      <img src="assets/headshots/hanoona-abdul-rasheed.jpeg" alt="Headshot placeholder for Hanoona Abdul Rasheed">
+      <div class="meta">
+        <div class="name"><a href="https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl" target="_blank" rel="noopener">Hanoona A. Rasheed</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="muhammad-maaz">
+      <img src="assets/headshots/muhammad-maaz.avif" alt="Headshot placeholder for Muhammad Maaz">
+      <div class="meta">
+        <div class="name"><a href="https://www.mmaaz60.com/" target="_blank" rel="noopener">Muhammad Maaz</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://www.mmaaz60.com/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+    <article class="card person" id="andrew-westbury">
+      <img src="assets/headshots/andrew-westbury.jpeg" alt="Headshot placeholder for Andrew Westbury">
+      <div class="meta">
+        <div class="name"><a href="https://www.linkedin.com/in/andrew-westbury-2757a31b/" target="_blank" rel="noopener">Andrew Westbury</a></div>
+        <div class="aff">Organizer</div>
+        <div class="ext"><a href="https://www.linkedin.com/in/andrew-westbury-2757a31b/" target="_blank" rel="noopener">Profile ↗</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section container" id="venue">
+  <h2>Venue</h2>
+  <p><strong>ICCV 2025</strong>, Honolulu, Hawaii — <strong>Room 328</strong>.</p>
+  <p class="kv"><span class="tag">Date: Monday, Oct 20</span> <span class="tag">Time: 9:00–12:30pm</span> <span class="tag">Room: 328</span></p>
+</section>
+
+<section class="section container" id="contact">
+  <h2>Contact</h2>
+  <p>Questions? Email <a href="mailto:awestbury@meta.com">awestbury@meta.com</a>.</p>
+</section>
+
+<footer class="footer">
+  <p>© ICCV 2025 Tutorial — From Segment Anything to Generalized Visual Grounding</p>
+  <small>Last updated: October 01, 2025</small>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
